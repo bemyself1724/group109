@@ -15,6 +15,7 @@ SHA256算法是SHA-2（Secure Hash Algorithm 2）家族中的一员，接受任�
 
 ### 消息填充
 * 对消息进行补码处理: 将消息转化为二进制补码形式，假设消息M的二进制编码长度为l位. 首先在消息末尾补上一位"1", 然后再补上个"0", 其中为下列方程的最小非负整数：
+  
 ![](https://pic.imgdb.cn/item/64cb1deb1ddac507ccf9fe83.jpg)
 
 * 填充一个64位大小的数据块，大端模式存放原始数据长度。
@@ -25,12 +26,14 @@ SHA256算法是SHA-2（Secure Hash Algorithm 2）家族中的一员，接受任�
 * 对于每一块，将块分解为16个32-bit的字，记为w[0], …, w[15]
 也就是说，前16个字直接由消息的第i个块分解得到。
 * 其余的字由如下迭代公式得到：
+  
 ![](https://pic.imgdb.cn/item/64cb20401ddac507cc00e7c0.jpg)
 
 
 
 ### 迭代压缩
 由定义的初始值H0通过压缩函数生成迭代的中间值值H1，经过64次压缩后后生成本消息分组的最终哈希值。压缩函数的结构如图：
+
 ![](https://pic.imgdb.cn/item/64cb223f1ddac507cc06552d.jpg)
 
   
@@ -74,9 +77,11 @@ def length_extansion_attack(message_og, hash_og, keylen, attack_message):
 
 ## 4.运行结果
 * SM3长度扩展攻击
+  
 ![](https://pic.imgdb.cn/item/64cb273e1ddac507cc13a225.jpg)
 
 * SHA256长度扩展攻击
+  
 ![](https://pic.imgdb.cn/item/64cb27cd1ddac507cc1514b4.jpg)
   
 
