@@ -87,4 +87,5 @@ def length_extansion_attack(message_og, hash_og, keylen, attack_message):
 
 ##  引文参考
 [1]https://zhuanlan.zhihu.com/p/44668032
+
 [2]https://en.wikipedia.org/wiki/Length_extension_attack
