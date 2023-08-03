@@ -5,7 +5,7 @@
 * 运行merkle_tree.py即可
   
 ### 验证exclusion proof
-*运行exclusion_proof.py即可
+* 运行exclusion_proof.py即可
 
 ## 实验要求
 * 1.构建拥有十万叶子结点的merkle_tree
@@ -67,9 +67,11 @@ def create_merkle_tree(node_list):         # 创建Merkle Tree
 ## 4.运行结果
 1.验证inclusion proof（以1000个叶子结点为例，生成10w叶子结点可更改实参）
 ![](https://pic.imgdb.cn/item/64cb48e51ddac507cc6b5ca3.jpg)
+
 2.验证exclusion proof（以100个叶子结点为例，生成10w叶子结点可更改实参num）
 ![](https://pic.imgdb.cn/item/64cb42ac1ddac507cc5a1b4b.jpg)
 
 ## 引文参考
 [1]https://www.jianshu.com/p/bfe990be3a21
+
 [2]https://gist.github.com/chris-belcher/eb9abe417d74a7b5f20aabe6bff10de0
