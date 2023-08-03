@@ -75,3 +75,5 @@ def create_merkle_tree(node_list):         # 创建Merkle Tree
 [1]https://www.jianshu.com/p/bfe990be3a21
 
 [2]https://gist.github.com/chris-belcher/eb9abe417d74a7b5f20aabe6bff10de0
+
+[3]https://dl.acm.org/doi/abs/10.17487/RFC6962
