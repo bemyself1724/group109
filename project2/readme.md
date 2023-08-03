@@ -28,8 +28,10 @@ Rho方法的成功性会受到哈希函数的碰撞性与初始值选择的影�
 本实验采用简化的SM3进行Rho碰撞，即获得哈希值后只取前4x位进行碰撞，x为自选参数。输入-1时程序结束。运行结果如图所示：
 
 * 通过编写的SM3.py文件进行12bit Rho碰撞
+  
 ![](https://pic.imgdb.cn/item/64ca819b1ddac507cc0aef26.jpg)
 
 * 通过gmssl库提供的SM3哈希算法进行20bit Rho碰撞
+  
 ![](https://pic.imgdb.cn/item/64ca7d961ddac507cc025081.jpg)
   
