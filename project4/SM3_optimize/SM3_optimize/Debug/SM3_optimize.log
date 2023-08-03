@@ -1,0 +1,15 @@
+﻿  SM3_optimize.cpp
+D:\project1_5\project4\SM3_optimize\SM3_optimize\SM3_optimize.cpp(10,51): warning C4838: 从“unsigned int”转换到“int”需要收缩转换
+D:\project1_5\project4\SM3_optimize\SM3_optimize\SM3_optimize.cpp(10,63): warning C4838: 从“unsigned int”转换到“int”需要收缩转换
+D:\project1_5\project4\SM3_optimize\SM3_optimize\SM3_optimize.cpp(10,87): warning C4838: 从“unsigned int”转换到“int”需要收缩转换
+D:\project1_5\project4\SM3_optimize\SM3_optimize\SM3_optimize.cpp(10,99): warning C4838: 从“unsigned int”转换到“int”需要收缩转换
+D:\project1_5\project4\SM3_optimize\SM3_optimize\SM3_optimize.cpp(11,52): warning C4838: 从“unsigned int”转换到“int”需要收缩转换
+D:\project1_5\project4\SM3_optimize\SM3_optimize\SM3_optimize.cpp(11,64): warning C4838: 从“unsigned int”转换到“int”需要收缩转换
+D:\project1_5\project4\SM3_optimize\SM3_optimize\SM3_optimize.cpp(11,88): warning C4838: 从“unsigned int”转换到“int”需要收缩转换
+D:\project1_5\project4\SM3_optimize\SM3_optimize\SM3_optimize.cpp(11,100): warning C4838: 从“unsigned int”转换到“int”需要收缩转换
+D:\project1_5\project4\SM3_optimize\SM3_optimize\SM3_optimize.cpp(44,22): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+D:\project1_5\project4\SM3_optimize\SM3_optimize\SM3_optimize.cpp(50,42): warning C4309: “=”: 截断常量值
+D:\project1_5\project4\SM3_optimize\SM3_optimize\SM3_optimize.cpp(66,42): warning C4309: “=”: 截断常量值
+D:\project1_5\project4\SM3_optimize\SM3_optimize\SM3_optimize.cpp(183,13): warning C4101: “tmp1”: 未引用的局部变量
+D:\project1_5\project4\SM3_optimize\SM3_optimize\SM3_optimize.cpp(76): warning C4715: “padding_divide”: 不是所有的控件路径都返回值
+  SM3_optimize.vcxproj -> D:\project1_5\project4\SM3_optimize\Debug\SM3_optimize.exe
