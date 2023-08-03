@@ -75,5 +75,7 @@ __m128i left_simd(__m128i a, int k)
 
 ##  引文参考
 [1]https://zhuanlan.zhihu.com/p/55327037
+
 [2]http://eprint.iacr.org/2012/067.pdf
+
 [3]https://zhuanlan.zhihu.com/p/391091872
