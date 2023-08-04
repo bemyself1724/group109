@@ -1,6 +1,9 @@
 # project10 :report on the application of this deduce technique in Ethereum with ECDSA
 ---
 
+## 运行方式
+直接运行ECDSA.py文件即可
+
 ## ECDSA介绍
 ECDSA（Elliptic Curve Digital Signature Algorithm）是一种数字签名算法，用于生成和验证数字签名。ECDSA是ECC与DSA的结合，在比特币、以太坊等区块链网络中大量使用。每一笔区块链交易执行之前都必须进行权限校验，以确保该交易是由账户对应的私钥签发。256 位私钥的 ECDSA 签名可以达到 3072 位 RSA 签名的安全强度。整个签名过程与DSA类似，所不一样的是签名中采取的算法为ECC，最后签名出来的值也是分为r,s。
 
@@ -72,7 +75,9 @@ def recover_PK(s, r, m, P, G):
 
 ```
 
-
+## 运行结果
+签名与验证耗时较少
+![](https://pic.imgdb.cn/item/64cc71791ddac507ccd8bb0e.jpg)
 
 
 
