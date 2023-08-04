@@ -34,6 +34,7 @@ Project12: verify the above pitfalls with proof-of-concept code<br>
 Project13: Implement the above ECMH scheme<br>
 Project14: Implement a PGP scheme with SM2<br>
 Project17：比较Firefox和谷歌的记住密码插件的实现区别<br>
+Project18: send a tx on Bitcoin testnet, and parse the tx data down to every bit, better write script yourself<br>
 Project19: forge a signature to pretend that you are Satoshi<br>
 Project20: ECMH PoC<br>
 
@@ -46,8 +47,6 @@ Project16: implement sm2 2P decrypt with real network communication<br>
 Project21: Schnorr Bacth<br>
 Project22: research report on MPT<br>
 
-### （三）未实现project
-Project18: send a tx on Bitcoin testnet, and parse the tx data down to every bit, better write script yourself<br>
 
 ## 四、project具体实现（详细的原理解释与代码实现参见具体项目readme文件）
 
