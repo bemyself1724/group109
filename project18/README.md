@@ -1,5 +1,6 @@
 # send a tx on Bitcoin testnet, and parse the tx data down to every bit, better write script yourself  
 
+(未能实现)
 
 # 1 实验过程
 
@@ -16,3 +17,5 @@
 ![](https://pic.imgdb.cn/item/64cd247a1ddac507cc91ee56.jpg)
 
 此时遇到问题，显示bitcion无法获取
+
+去往BlockCypher Testnet Explorer网站并未发现交易信息。
