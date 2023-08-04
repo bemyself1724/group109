@@ -34,6 +34,7 @@ Project12: verify the above pitfalls with proof-of-concept code<br>
 Project13: Implement the above ECMH scheme<br>
 Project14: Implement a PGP scheme with SM2<br>
 Project17：比较Firefox和谷歌的记住密码插件的实现区别<br>
+Project19: forge a signature to pretend that you are Satoshi<br>
 Project20: ECMH PoC<br>
 
 ### （二）未完成project
@@ -42,10 +43,11 @@ Project7: Try to Implement this scheme<br>
 Project8: AES impl with ARM instruction<br>
 Project15: implement sm2 2P sign with real network communication<br>
 Project16: implement sm2 2P decrypt with real network communication<br>
-Project18: send a tx on Bitcoin testnet, and parse the tx data down to every bit, better write script yourself<br>
-Project19: forge a signature to pretend that you are Satoshi<br>
 Project21: Schnorr Bacth<br>
 Project22: research report on MPT<br>
+
+### （三）未实现project
+Project18: send a tx on Bitcoin testnet, and parse the tx data down to every bit, better write script yourself<br>
 
 ## 四、project具体实现（详细的原理解释与代码实现参见具体项目readme文件）
 
@@ -419,5 +421,29 @@ Firefox和谷歌这两大主流浏览器中都提供了记住密码的功能，�
 * 密码自动填充
 
 受限于篇幅，具体分析请参考项目readme文件
+
+### Project19: forge a signature to pretend that you are Satoshi
+
+https://github.com/bemyself1724/group109/tree/main/project19
+
+#### 实验内容
+比特币中使用ECDSA进行签名，本次实验研究如何在未知明文消息m的前提下，伪造能通过检验的合法签名。<br>
+
+#### 实验原理
+假设已经得到了真实且合法的签名(r,s)。<br>
+在验证算法中，s^{-1}(eG+rP)=R=(x',y')，只需验证r=x' mod n是否成立。<br>
+针对此过程，我们随机选择u,v，计算R'=(x',y')=uG+vP。<br>
+当s'^{-1}(e'G+r'P)=uG+vP，计算得到(r',s',e')，这样就伪造得到可以通过验证的签名。<br>
+
+#### 实验过程
+1. 生成Satoshi的公私钥<br>
+2. 伪造签名<br>
+3. 验证签名<br>
+
+#### 运行方式
+* 直接运行main.py即可
+
+#### 实验结果
+![](https://pic.imgdb.cn/item/64cd1b8c1ddac507cc79a12c.jpg)
 
 
