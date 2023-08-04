@@ -78,7 +78,7 @@ def recover_PK(s, r, m, P, G):
 ## 运行结果
 签名与验证耗时较少
 
-![](https://pic.imgdb.cn/item/64cc71791ddac507ccd8bb0e.jpg)
+![](https://pic.imgdb.cn/item/64cc73591ddac507ccdd0d4d.jpg)
 
 
 
