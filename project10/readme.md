@@ -9,15 +9,15 @@ ECDSA（Elliptic Curve Digital Signature Algorithm）是一种数字签名算法
 
 
 ## ECDSA的实现
-- 选取一条椭圆曲线，选择参数a，b，基点G，阶数为n
-- 选取$d\in n$为私钥，计算公钥为$P = d\cdot G$
-- 签名算法：
-  1. 计算$m$的哈希值$e=H(m)$
-  2. 生成随机数$k\in n$
-  3. 计算$R = (x,y)=k\cdot G$
-  4. 计算$r=x\mod n$，若$r=0$，则重新选择$k$
-  5. 计算$s=k^{-1}(e+dr)\mod n$，若$s=0$，则重新选择$k$
-  6. 返回签名$(r,s)$
+选取一条椭圆曲线，选择参数a，b，基点G，阶数为n
+选取$d\in n$为私钥，计算公钥为$P = d\cdot G$
+签名算法：
+  * 1. 计算$m$的哈希值$e=H(m)$
+  * 2. 生成随机数$k\in n$
+  * 3. 计算$R = (x,y)=k\cdot G$
+  * 4. 计算$r=x\mod n$，若$r=0$，则重新选择$k$
+  * 5. 计算$s=k^{-1}(e+dr)\mod n$，若$s=0$，则重新选择$k$
+  * 6. 返回签名$(r,s)$
 ```python
 def ECDSA_sign(m, G, d, k, n):
     e = hash(m)
@@ -77,6 +77,7 @@ def recover_PK(s, r, m, P, G):
 
 ## 运行结果
 签名与验证耗时较少
+
 ![](https://pic.imgdb.cn/item/64cc71791ddac507ccd8bb0e.jpg)
 
 
